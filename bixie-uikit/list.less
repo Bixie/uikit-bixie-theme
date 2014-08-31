@@ -9,6 +9,7 @@
 
 @list-line-border:                              @global-border;
 
+@list-checked-check-color:                      @text-success-color;
 
 // Modifier: `list-line`
 // ========================================================================
@@ -25,4 +26,25 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-list-misc() {}
+.hook-list-misc() {
+
+  // Modifier: `list-checked` known issue in IE w.i.p
+  // ========================================================================
+  .uk-list-checked > li {
+    position: relative;
+    padding-left: 20px;
+    &:before {
+      position: absolute;
+      left: 0;
+      content: "\f00c";
+      font-family: "FontAwesome";
+      font-size: 14px;
+      line-height: 23px;
+      color: @list-checked-check-color;
+    }
+  }
+  > li:nth-child(n+2) {
+    margin-top: @list-line-margin-top;
+  }
+
+}
