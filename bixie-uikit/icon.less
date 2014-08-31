@@ -15,6 +15,7 @@
 
 @icon-button-active-color:                      @global-color;
 
+@icon-fixed-width:                              round(@icon-button-width * 0.5);
 
 // Modifier: `uk-icon-button`
 // ========================================================================
@@ -31,4 +32,12 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-icon-misc() {}
+.hook-icon-misc() {
+  // Fixed width for aligning icons
+  // ========================================================================
+  .uk-icon-fixed {
+    width: @icon-fixed-width;
+    text-align: center;
+  }
+
+}
