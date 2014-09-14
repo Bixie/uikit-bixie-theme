@@ -82,6 +82,8 @@
                 "@global-background",
                 "@global-border",
 
+                "@global-border-radius",
+                
                 "@utility-container-max-width",
                 "@utility-container-large-max-width"
             ]
@@ -91,11 +93,13 @@
             "vars": [
                 "@global-color",
                 "@global-muted-color",
+                "@global-text-shadow",
 
                 "@global-link-color",
                 "@global-link-hover-color",
 
                 "@global-contrast-color",
+                "@global-contrast-text-shadow",
 
                 "@global-font-size",
                 "@global-line-height",
@@ -107,6 +111,10 @@
         {
             "label": "Buttons, Navs & Badges",
             "vars": [
+                "@global-default-background",
+                "@global-default-hover-background",
+                "@global-default-active-background",
+
                 "@global-primary-background",
                 "@global-success-background",
                 "@global-warning-background",

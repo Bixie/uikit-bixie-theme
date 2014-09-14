@@ -9,7 +9,15 @@
 
 @list-line-border:                              @global-border;
 
+@list-striped-background:                       #fafafa;
+
+//
+// New
+//
 @list-checked-check-color:                      @text-success-color;
+
+@list-striped-border:                           @global-border;
+
 
 // Modifier: `list-line`
 // ========================================================================
@@ -20,7 +28,7 @@
 // Modifier: `list-striped`
 // ========================================================================
 
-.hook-list-striped() {}
+.hook-list-striped() { border-bottom: 1px solid @list-striped-border; }
 
 
 // Miscellaneous
