@@ -2,9 +2,11 @@
 //  PLC style - Matthijs Alles - Bixie.nl
 //
 
-
+@global-color: #050505;
 @global-font-size:                              20px;
 @global-line-height:                            24px;
+@global-grid-gutter:                            3px;
+@global-grid-gutter-large:                      3px;
 
 @base-h1-font-size:                             round((@global-font-size * 2.85)); // 40px
 @base-h1-line-height:                           round((@base-h1-font-size * 1.25)); // 50px
@@ -19,6 +21,9 @@
 
 @text-large-font-size:                          140px;
 @text-large-line-height:                        160px;
+@text-success-color:                            #659f13;
+@text-warning-color:                            #e28327;
+@text-danger-color: #d81012;
 
 @panel-title-font-size:                         @base-h2-font-size;
 @panel-title-line-height:                       @base-h2-line-height;
@@ -33,6 +38,20 @@
 @utility-container-large-max-width:             1500px;
 @utility-container-large-padding-horizontal:    45px;
 
-body.uk-body-danger {
+body.uk-body-danger .uk-modal.uk-open{
   background-color: @text-danger-color;
+}
+
+.bix-side {
+  .uk-panel + .uk-panel {
+    margin-top: 3px;
+  }
+}
+
+
+.hook-utility-misc() {
+  .uk-height-viewport-1-3 {
+    height: 33vh;
+    min-height: (@utility-height-viewport-min-height/3) ;
+  }
 }

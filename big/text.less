@@ -19,8 +19,28 @@
 // ========================================================================
 
 .hook-text-misc() {
+  .uk-text-contrast { color: @global-contrast-color !important; }
+
   .uk-header-large {
-    font-size: 190px;
-    line-height: 220px;
+    font-size: 110px;
+    line-height: 130px;
   }
+  .uk-header-full {
+    font-size: 490px;
+    line-height: 520px;
+  }
+  /* Bigger!! */
+  @media (min-width: @breakpoint-xxlarge) {
+
+    .uk-header-large {
+      font-size: 300px;
+      line-height: 320px;
+    }
+    .uk-header-full {
+      font-size: 890px;
+      line-height: 920px;
+    }
+
+  }
+
 }

@@ -9,8 +9,11 @@
 
 @modal-z-index:                                 @global-z-index + 10;
 
-@modal-dialog-background:                       @global-background;
+@modal-background: rgba(247, 46, 51, 0.60);
 
+@modal-dialog-background:                       @global-danger-background;
+
+@modal-dialog-large-width-large: 80%;
 
 // Component
 // ========================================================================
@@ -24,10 +27,13 @@
 .hook-modal-dialog() {
     border-radius: @global-border-radius;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: @text-danger-color;
 }
 
 
 // Miscellaneous
 // ========================================================================
 
-.hook-modal-misc() {}
+.hook-modal-misc() {
+
+}
