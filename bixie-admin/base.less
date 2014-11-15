@@ -41,7 +41,7 @@
 @base-blockquote-font-size:                     round((@global-font-size * 1.14)); // 16px / 18px
 @base-blockquote-line-height:                   round((@base-blockquote-font-size * 1.36)); // 22px / 24px
 
-@base-code-font-size:                           round(@global-font-size * 0.85); // 12px / 14px
+@base-code-font-size:                           round((@global-font-size * 0.85)); // 12px / 14px
 
 @base-pre-background:                           #fafafa;
 @base-pre-color:                                @global-color;
@@ -88,8 +88,4 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-base-misc() {
-  body {
-    background-color: @global-muted-color;
-  }
-}
+.hook-base-misc() {}
