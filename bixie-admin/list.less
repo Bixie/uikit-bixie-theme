@@ -36,7 +36,7 @@
 
 .hook-list-misc() {
 
-  .uk-list-striped > li:first-child { border-top: 1px solid @list-striped-border; }
+    .uk-list-striped > li:first-child { border-top: 1px solid @list-striped-border; }
 
   // Modifier: `list-checked` known issue in IE w.i.p
   // ========================================================================
@@ -52,9 +52,9 @@
       line-height: 23px;
       color: @list-checked-check-color;
     }
-  }
-  > li:nth-child(n+2) {
-    margin-top: @list-line-margin-top;
+    &:nth-child(n+2) {
+      margin-top: @list-line-margin-top;
+    }
   }
 
 }

@@ -7,6 +7,9 @@
 // Variables
 // ========================================================================
 
+@icon-hover-color:                              @global-muted-color;
+@icon-hover-hover-color:                        @global-color;
+
 @icon-button-height:                            @icon-button-width;
 @icon-button-background:                        @global-default-background;
 @icon-button-font-size:                         round((@icon-button-width * 0.5));
@@ -22,10 +25,17 @@
 // New
 //
 
-@icon-fixed-width:                              round((@icon-button-width * 0.5));
 @icon-button-border:                            #e7e7e7;
 @icon-button-hover-border:                      #d3d3d3;
 @icon-button-text-shadow:                       @global-text-shadow;
+
+
+// Modifier: `uk-icon-hover`
+// ========================================================================
+
+.hook-icon-hover() {}
+
+.hook-icon-hover-hover() {}
 
 
 // Modifier: `uk-icon-button`
@@ -46,12 +56,4 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-icon-misc() {
-  // Fixed width for aligning icons
-  // ========================================================================
-  .uk-icon-fixed {
-    width: @icon-fixed-width;
-    text-align: center;
-  }
-
-}
+.hook-icon-misc() {}
