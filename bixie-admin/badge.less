@@ -7,7 +7,7 @@
 // Variables
 // ========================================================================
 
-@badge-background:                              @global-primary-background;
+@badge-background:                              @global-site-gray-mid;
 @badge-font-size:                               round((@global-font-size * 0.74)); // 10px / 12px
 @badge-line-height:                             round((@badge-font-size * 1.36)); // 14px / 16px
 @badge-color:                                   @global-contrast-color;
@@ -24,6 +24,7 @@
 // New
 //
 
+@badge-primary-background:                      @global-primary-background;
 @badge-border:                                  rgba(0,0,0,0.06);
 @badge-text-shadow:                             @global-contrast-text-shadow;
 
@@ -63,4 +64,10 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-badge-misc() {}
+.hook-badge-misc() {
+  .uk-badge-primary {
+    background-color: @badge-primary-background;
+  }
+
+
+}

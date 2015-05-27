@@ -9,8 +9,11 @@
 @global-grid-gutter-large:                      3px;
 @global-border-radius: 0;
 
-@base-h1-font-size:                             round((@global-font-size * 2.85)); // 40px
-@base-h1-line-height:                           round((@base-h1-font-size * 1.25)); // 50px
+@base-h1-font-size:                             78px;
+@base-h1-line-height:                           88px;
+@base-h1-font-size-large:                       128px;
+@base-h1-line-height-large:                     132px;
+
 @base-h2-font-size:                             round((@global-font-size * 1.71)); // 24px
 @base-h2-line-height:                           round((@base-h2-font-size * 1.25)); // 30px
 @base-h3-font-size:                             round((@global-font-size * 1.28)); // 18px
@@ -51,8 +54,16 @@ body.uk-body-danger .uk-modal.uk-open{
 
 
 .hook-utility-misc() {
-  .uk-height-viewport-1-3 {
-    height: 33vh;
-    min-height: (@utility-height-viewport-min-height/3) ;
+  .uk-height-viewport-1-4 {
+    height: 26.5vh;
+    min-height: (@utility-height-viewport-min-height/4) ;
+  }
+  .uk-height-viewport-1-5 {
+    height: 20vh;
+    min-height: (@utility-height-viewport-min-height/5) ;
+  }
+  .uk-height-viewport-4-5 {
+    height: 80vh;
+    min-height: (@utility-height-viewport-min-height/5) * 4 ;
   }
 }
