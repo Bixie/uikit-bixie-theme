@@ -1,0 +1,145 @@
+
+//counters
+.bix-counter {
+  .count {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    padding: 2px 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 9px;
+    line-height: 11px;
+    font-weight: bold;
+    background-color: @text-danger-color;
+    text-align: center;
+  }
+  //in accordion
+  &.uk-parent {
+    position: relative;
+    span {
+      color: @global-contrast-color;
+    }
+    .count {
+      right: 25px;
+      top: 13px;
+    }
+  }
+  //icons
+  .uk-icon-check, .uk-icon-bell-slash {
+    cursor: pointer;
+    font-size: @text-small-font-size;
+    color: @global-muted-color;
+  }
+  .uk-icon-check:hover {
+    color: @text-primary-color;
+  }
+  .uk-icon-bell-slash:hover {
+    color: @text-danger-color;
+  }
+}
+//profile img mobile
+.icon-img {
+  img {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    border: 1px solid transparent;
+  }
+  &.on {
+    img {
+      border-color: @text-danger-color;
+    }
+    .uk-icon-bars {
+      color: @text-danger-color;
+    }
+  }
+}
+//side offcanvas toggle
+#bix-pins-side-toggle {
+  display: none;
+  &.uk-active i {
+    color: @text-primary-color !important;
+  }
+}
+#bix-pins-grid {
+  .bix-side {
+    display: none;
+  }
+}
+@media (min-width: 1199px) {
+  #bix-pins-offcanvas-toggle {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #bix-pins-side-toggle {
+    display: inline-block;
+  }
+  #bix-pins-grid {
+    > div {
+      transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+    }
+    .bix-side {
+      display: none;
+      background-color: @offcanvas-bar-background;
+      color: @global-contrast-color;
+      opacity: 0;
+    }
+    &.uk-open {
+      .bix-main {
+        width: 80%;
+      }
+      .bix-side {
+        display: block;
+        opacity: 1;
+        width: 20%;
+      }
+    }
+  }
+}
+//pins
+.bix-pinned-toggle {
+  padding: 15px 0 0 5px;
+}
+i.bix-pinned-icon {
+  color: @global-muted-color;
+  &.pinit {
+    cursor: pointer;
+    color: @text-primary-color;
+  }
+  &.unpin {
+    cursor: pointer;
+    color: @text-danger-color;
+  }
+}
+//pinned list
+.bix-pinned {
+  .uk-icon-thumb-tack {
+    cursor: pointer;
+    font-size: @text-small-font-size;
+    color: @global-muted-color;
+    margin: 5px 5px 0 0;
+  }
+  .uk-icon-thumb-tack:hover {
+    color: @text-danger-color;
+  }
+  .uk-icon-exclamation {
+    color: @text-danger-color;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  &.bix-hasnew .uk-icon-exclamation {
+    opacity: 1;
+  }
+  [data-href] {
+    cursor: pointer;
+    color: @global-contrast-color;
+  }
+  [data-href]:hover {
+    text-decoration: underline
+  }
+}
