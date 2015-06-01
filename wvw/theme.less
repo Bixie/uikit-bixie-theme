@@ -115,6 +115,20 @@ i.bix-pinned-icon {
     color: @text-danger-color;
   }
 }
+i.bix-muted-icon {
+  color: @global-muted-color;
+  &.mute {
+    cursor: pointer;
+    color: @text-primary-color;
+  }
+  &.unmute {
+    cursor: pointer;
+    color: @text-danger-color;
+  }
+  &.unmute:before {
+    content: "\f1f6";
+  }
+}
 //pinned list
 .bix-pinned {
   .uk-icon-thumb-tack {
